@@ -8,6 +8,6 @@ export class ItemsController {
 
   @Get()
   findAll(@Query() dto: GetItemsDto) {
-    return this.itemsService.findAll(dto.limit, dto.offset);
+    return this.itemsService.findAll(dto.limit, dto.cursor);
   }
 }

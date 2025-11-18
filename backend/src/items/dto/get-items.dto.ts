@@ -12,5 +12,5 @@ export class GetItemsDto {
   @Type(() => Number)
   @IsNumber()
   @Min(0)
-  offset: number = 0;
+  cursor?: number;
 }

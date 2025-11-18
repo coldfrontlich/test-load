@@ -23,7 +23,7 @@ const startTest = async () => {
 
   for (let i = 0; i < requestsCount.value; i++) {
     sent.value++
-    fetch('http://localhost:3000/items?limit=10&offset=0', { mode: 'cors' })
+    fetch('http://localhost:3000/items?limit=10', { mode: 'cors' })
       .then(res => {
         if (res.ok) successful.value++
         else errors.value++
